@@ -160,6 +160,7 @@ body.light-theme {
 }
 
 .light-theme .home__social-link,
+.light-theme .home__scroll,
 .light-theme .button,
 .light-theme .button:hover,
 .light-theme .active-work,
@@ -359,6 +360,41 @@ body.light-theme {
   gap: 1.5rem;
 }
 
+.home__social,
+.home__scroll {
+  position: absolute;
+}
+
+.home__social {
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home__social-link {
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: .25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+.home__social-link:hover {
+  background-color: var(--first-color);
+  color: #000000;
+}
+
+.home__social::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 3px);
+}
+
 .about__social {
   display: flex;
   justify-content: center;
@@ -379,6 +415,32 @@ body.light-theme {
 .home__social-link:hover {
   background-color: var(--first-color);
   color: #000000;
+}
+
+.home__social::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 3px);
+}
+
+.home__scroll {
+  color: var(--first-color);
+  right: -1.5rem;
+  bottom: 6rem;
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+}
+
+.home__scroll-icon {
+  font-size: 1.5rem;
+}
+
+.home__scroll-name {
+  font-size: var(--small-font-size);
+  transform: rotate(-90deg);
 }
 
 /*=============== BUTTONS ===============*/
@@ -448,7 +510,9 @@ body.light-theme {
 }
 
 .about__description {
-  margin-bottom: 2rem;
+  text-wrap: balance;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem;
 }
 
 /*=============== SKILLS ===============*/
@@ -508,7 +572,9 @@ body.light-theme {
 /*=============== SERVICES ===============*/
 
 .services__container {
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  justify-content: center; */
   gap: 1.5rem;
   padding-top: 1rem;
 }
@@ -544,11 +610,8 @@ body.light-theme {
 }
 
 /* Services modal */
-
 .services__modal {
   position: fixed;
-  /* top: 0; bottom: 0; left: 0; right: 0; */
-  /* inset: 0 0 0 0; */
   inset: 0;
   background-color: hsla(var(--second-hue), 28%, 16%, .7);
   padding: 2rem 1rem;
@@ -576,11 +639,6 @@ body.light-theme {
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
-}
-
-.services__modal-description {
-  font-size: var(--small-font-size);
-  margin-bottom: 2rem;
 }
 
 .services__modal-list {
@@ -743,7 +801,7 @@ body.light-theme {
 }
 
 .contact__card {
-  background-color: hsla(var(--second-hue), 32%, 16%, .9);
+  background-color: var(--container-color);
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
@@ -828,7 +886,6 @@ body.light-theme {
 .contact__form-area textarea {
   resize: none;
 }
-
 
 /*=============== FOOTER ===============*/
 
@@ -933,8 +990,17 @@ body.light-theme {
     font-size: var(--small-font-size);
   }
 
+  .services__container {
+    grid-template-columns: repeat(1, 200px);
+    justify-content: center;
+  }
+
   .work__item {
     font-size: var(--small-font-size);
+  }
+
+  .work__filters {
+    column-gap: .25rem;
   }
 
 }
@@ -957,7 +1023,7 @@ body.light-theme {
   }
 
   .about__description {
-    padding: 0;
+    padding: 0rem;
   }
 
   .skills__container {
@@ -969,7 +1035,8 @@ body.light-theme {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 
   .services__modal-content {
@@ -991,11 +1058,6 @@ body.light-theme {
     justify-content: center;
   }
   
-  .contact__info {
-    grid-template-columns: 300px;
-    justify-content: center;
-  }
-  
   .contact__form {
     width: 360px;
     margin: 0 auto;
@@ -1003,11 +1065,12 @@ body.light-theme {
 }
 
 /*? For large devices */
-/* @media screen and (min-width: 767px) {
-  .work__container {
-    grid-template-columns: repeat(auto-fit, max-content);
-  }
-} */
+@media screen and (min-width: 767px) {
+  /* .services__container {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+}
 
 /*? For xlarge devices */
 @media screen and (min-width: 992px) {
@@ -1046,6 +1109,10 @@ body.light-theme {
     transform: rotate(90deg) translate(16px, 0);
   }
 
+  .home__scroll-icon {
+    font-size: 2rem;
+  }
+
   .about__container {
     align-items: center;
     justify-items: center;
@@ -1073,7 +1140,12 @@ body.light-theme {
   .skills__container {
     text-wrap: balance;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
+    column-gap: 2rem;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 250px);
+    column-gap: 2rem;
   }
 
   .services__card {
