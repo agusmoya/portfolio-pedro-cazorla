@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<meta lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portfolio Pedro Cazorla">
+    <meta property="og:description" content="Descripción detallada de perfil. Experiencia, formación y videos.">
+    <meta property="og:image" content="https://portfolio-pedro-cazorla.netlify.app/assets/img/user-profile.png">
+    <meta property="og:image:alt" content="Fotografia del usuario">
+    <meta property="og:url" content="https://portfolio-pedro-cazorla.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/diegoblanco.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Portfolio Pedro Cazorla </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Pedro Cazorla</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class='bx bxs-network-chart'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-mail-send'></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hola, me llamo</span>
+                    <h1 class="home__name">Pedro Cazorla</h1>
+                    <h3 class="home__education">Lic. en Alto Rendimiento Deportivo</h3>
+
+                    <div class="home__buttons">
+                        <a download href="assets/pdf/cvpedrocazorla.pdf" class="button button--ghost">
+                            Descargar CV
+                        </a>
+                        <a href="#about" class="button">Acerca de mí</a>
+                    </div>
+                </div>
+                <div class="home__handle">
+                    <img src="assets/img/user-profile.png" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://api.whatsapp.com/send?phone=+5492616409231&text=Hola, luego de ver tu portfolio, quiero conocer más sobre tus servicios."
+                        target="_blank" class="home__social-link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/pedro5cazorla?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="home__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pedro-cazorla-786007183/?originalSubdomain=ar" target="_blank"
+                        class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Introducción</span>
+            <h2 class="section__title">Acerca de Mí</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about-pc.webp" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experiencia</h3>
+                            <span class="about__subtitle">8 años</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Formación</h3>
+                            <span class="about__subtitle">12 años</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Modalidad de Trabajo</h3>
+                            <span class="about__subtitle">Online y presencial</span>
+                        </div>
+
+                    </div>
+
+                    <p class="about__description">
+                        Practico deportes desde muy joven,
+                        fútbol desde los 9 años y llegue a jugar
+                        en primera división (Liga Regional -
+                        Federal B - 4° División del Fútbol
+                        Argentino).</p>
+                    <p class="about__description">
+                        Soy un apasionado de los deportes en
+                        conjunto en especial del fútbol y es por
+                        eso que a partir de los 17 años
+                        comencé a formarme.
+                    </p>
+                    <p class="about__description">
+                        Tuve la oportunidad de viajar y
+                        estudiar en Europa conociendo
+                        metodologías novedosas e integrales.
+                        A esto le agrego un profundo
+                        conocimiento de nuestra idiosincrasia
+                        y cultura deportiva . Además de
+                        experiencia como coordinador
+                        deportivo, gestionando equipos de
+                        trabajo.
+                    </p>
+                    <a href="#contact" class="button">Contáctame</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Conocimientos</span>
+            <h2 class="section__title">Educación</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Formación Académica</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Prof. de Educación Física (2011-2015)</h3>
+                                    <span class="skills__level">I.E.F.: Instituto de Educación Física (Mendoza,
+                                        Argentina)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Lic. en Alto Rendimiento Deportivo (2015-2017)</h3>
+                                    <span class="skills__level">Universidad del Aconcagua (Mendoza, Argentina)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Director de Metodología (2018)</h3>
+                                    <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
+                                        España)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Director de Cantera (2018)</h3>
+                                    <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
+                                        España)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Video Analista Táctico (2018)</h3>
+                                    <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
+                                        España)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Entrenador de Fútbol UEFA B (2018)</h3>
+                                    <span class="skills__level">Esc. de Entrenadores Cesar Luis Menotti (Bs. As.,
+                                        Argentina)</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Experiencia Laboral</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Director Técnico (Agosto 2023-Actualidad)</h3>
+                                    <span class="skills__level">Selección Mendocina de Fútbol Femenino</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Analista de Datos en Vivo (Febrero-Septiembre 2023)</h3>
+                                    <span class="skills__level">Analysis Paradine Ltd. (Londres, Inglaterra)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Director Técnico/Coordinador (2020-Actualidad)</h3>
+                                    <span class="skills__level">Primera División e Inferiores del Fútbol Femenino (Club
+                                        Deportivo Godoy Cruz - Mendoza, Argentina)</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Preparador Físico/Coordinador (2015-2020)</h3>
+                                    <span class="skills__level">Categorías Infantiles. Inferiores y Primera División
+                                        (Andes Talleres Sport Club - Mendoza, Argentina)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="services">
+            <span class="section__subtitle">Equipo</span>
+            <h2 class="section__title">Modelo de Juego</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Nuestros <br> Principios</h3>
+                    <span class="services__button">
+                        Ver más <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">
+                                Principios:
+                            </h3>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Principios Ofensivos: Ser Amplios y Profundos rápidamente.
+                                        Variantes entre <b>posiciones</b> largas y Juego Directo.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Principios Defensivos: <b>Presionar</b> rápidamente.
+                                        Jugar con centrales adelantadas y mano a mano. <b>ARIESGAR</b>.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Nuestros <br> Sub-principios</h3>
+                    <span class="services__button">
+                        Ver más <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">
+                                Sub-principios:
+                            </h3>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        <b>Salidas</b> en corto, 10 tipos de variantes (Lavolpiana - Guardioliana)
+                                        para atraer al rival.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        <b>Posesiones</b> variadas en corto para liberar espacios y
+                                        encontrar a las alejadas en superioridad posicional.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Juego por fuera para encontrar <b>"espacios indefinibles"</b>
+                                        por dentro con las jugadoras que <b>"atacan el área"</b>.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        <b>Presión</b> a partir de 3-4 de cancha, jugar con centrales mano
+                                        a mano a la altura de la mitad de campo.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        <b>Orientar la presión</b> hacia zonas con mayor densidad defensiva nuestra.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Principios <br> Actitudinales</h3>
+                    <span class="services__button">
+                        Ver más <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">
+                                Principios Actitudinales:
+                            </h3>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Ser <b>PROTAGONISTAS</b> siempre en cualquier cancha y
+                                        con cualquier resultado.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        No discutir con autoridades ni rivales, no reclamar.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        No declarar de mas ni expresarse sobre resultados.
+                                        <b>HABLAR EN LA CANCHA</b>.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Mejorar, perfeccionar, reflexionar e insistir.
+                                        <b>SER APASIONADO DE ESTE DEPORTE</b>.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK VIDEOS ===============-->
+        <section class="work section" id="work">
+
+            <span class="section__subtitle">Videos</span>
+            <h2 class="section__title">Análisis Deportivo</h2>
+
+            <div class="work__filters">
+                <span class="work__item active__work" data-filter="all">Todos</span>
+                <span class="work__item" data-filter=".year24">2024</span>
+                <span class="work__item" data-filter=".year23">2023</span>
+                <span class="work__item" data-filter=".year22">2022</span>
+                <span class="work__item" data-filter=".year21">2021</span>
+                <span class="work__item" data-filter=".year20">2020</span>
+            </div>
+
+            <div class="work__container container grid">
+
+                <div class="work__card mix year24">
+                    <img class="work__img" src="assets/img/portadas/1_2024.webp" alt="img-work">
+                    <h3 class="work__title">Genaro Alonso - Volante Mixto</h3>
+
+                    <a href="https://youtu.be/oruIlfK8lBY?si=oQ6YVVmA3uDTikL1" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year23">
+                    <img class="work__img" src="assets/img/portadas/1_2023.webp" alt="img-work">
+                    <h3 class="work__title">Julian Torres - Defensor</h3>
+
+                    <a href="https://www.youtube.com/watch?v=cV2JF389Lhs" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year23">
+                    <img class="work__img" src="assets/img/portadas/2_2023.webp" alt="img-work">
+                    <h3 class="work__title">Veronica Cabrera - Delantera</h3>
+
+                    <a href="https://www.youtube.com/watch?v=rcL4H61c6zs" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year22">
+                    <img class="work__img" src="assets/img/portadas/2_2022.webp" alt="img-work">
+                    <h3 class="work__title">Tomás Bernal - Delantero</h3>
+
+                    <a href="https://www.youtube.com/watch?v=EIL0wemLDNI" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year22">
+                    <img class="work__img" src="assets/img/portadas/1_2022.webp" alt="img-work">
+                    <h3 class="work__title">Clasificación de los Goles - Godoy Cruz Femenino</h3>
+
+                    <a href="https://www.youtube.com/watch?v=EIL0wemLDNI" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year21">
+                    <img class="work__img" src="assets/img/portadas/1_2021.webp" alt="img-work">
+                    <h3 class="work__title">Matias Toledo - Mediocentro Defensivo</h3>
+
+                    <a href="https://youtu.be/Maa4govtQp0" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/1_2020.webp" alt="img-work">
+                    <h3 class="work__title">Valentino Juárez (1° parte) - Mediocentro</h3>
+
+                    <a href="https://www.youtube.com/watch?v=uKPZJN5DsZQ" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/3_2020.webp" alt="img-work">
+                    <h3 class="work__title">Valentino Juárez (2° parte) - Mediocentro</h3>
+
+                    <a href="https://www.youtube.com/watch?v=xhieYZ1DPP8&t" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/2_2020.webp" alt="img-work">
+                    <h3 class="work__title">Ramiro Ruíz - Mediocampista</h3>
+
+                    <a href="https://www.youtube.com/watch?v=PA3WVQtgOFc" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/4_2020.webp" alt="img-work">
+                    <h3 class="work__title">Tomás Bernal - Centro Delantero</h3>
+
+                    <a href="https://www.youtube.com/watch?v=WjgM8uHfiAI" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/5_2020.webp" alt="img-work">
+                    <h3 class="work__title">Genaro Alonso - Volante Ofensivo</h3>
+
+                    <a href="https://www.youtube.com/watch?v=Rfc66H9aZZA" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix year20">
+                    <img class="work__img" src="assets/img/portadas/6_2020.webp" alt="img-work">
+                    <h3 class="work__title">Matias Guardia - Volante Ofensivo</h3>
+
+                    <a href="https://www.youtube.com/watch?v=LJgnPsaNwC4" target="_blank" class="work__button">
+                        Ir a YouTube<i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Contacto</span>
+            <h2 class="section__title">Redes Sociales</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__card">
+                    <i class='bx bx-mail-send contact__card-icon'></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">cazorlapedro5@gmail.com</span>
+
+                    <a class="contact__button" href="mailto:cazorlapedro5@gmail.com" target="_blank">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class='bx bxl-whatsapp contact__card-icon'></i>
+                    <h3 class="contact__card-title">Whatsapp</h3>
+                    <span class="contact__card-data">+549 2616409231</span>
+
+                    <a class="contact__button"
+                        href="https://api.whatsapp.com/send?phone=+5492616409231&text=Hola, luego de ver tu portfolio, quiero conocer más sobre tus servicios."
+                        target="_blank">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class='bx bxl-instagram contact__card-icon'></i>
+                    <h3 class="contact__card-title">Instagram</h3>
+                    <span class="contact__card-data">pedro5cazorla</span>
+
+                    <a class="contact__button"
+                        href="https://www.instagram.com/pedro5cazorla?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class='bx bxl-linkedin contact__card-icon'></i>
+                    <h3 class="contact__card-title">LinkedIn</h3>
+                    <span class="contact__card-data">Pedro Cazorla</span>
+
+                    <a class="contact__button"
+                        href="https://www.linkedin.com/in/pedro-cazorla-786007183/?originalSubdomain=ar"
+                        target="_blank">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+
+            <h1 class="footer__title">Pedro Cazorla</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Videos</a>
+                </li>
+                <li>
+                    <a download href="assets/pdf/cvpedrocazorla.pdf" class="footer__link">
+                        Descargar CV
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
