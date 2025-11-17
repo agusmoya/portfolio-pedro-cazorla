@@ -13,9 +13,9 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 207;
+  --first-hue: 230;
   --sat: 73%;
-  --lig: 75%;
+  --lig: 69%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
@@ -230,7 +230,7 @@ body.light-theme {
 .section__subtitle {
   display: block;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -786,7 +786,7 @@ body.light-theme {
 
 /* Swiper class */
 .swiper-pagination-bullet {
-  background-color: var(--text-color-light);
+  background-color: var(--text-color);
 }
 
 .swiper-pagination-bullet-active {
