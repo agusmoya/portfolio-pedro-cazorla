@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta lang="es-ES">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,51 +31,45 @@
 <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Pedro Cazorla</a>
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#" class="nav__logo" aria-label="Home - Pedro Cazorla">Pedro Cazorla</a>
             <div class="nav__menu">
                 <ul class="nav__list">
-
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home-alt'></i>
+                            <i class='bx bx-home-alt' aria-label="Home" title="Home"></i>
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i>
+                            <i class='bx bx-user' aria-label="About" title="About"></i>
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-book'></i>
+                            <i class='bx bx-book' aria-label="Skills" title="Skills"></i>
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
-                            <i class='bx bxs-network-chart'></i>
+                            <i class='bx bxs-network-chart' aria-label="Services" title="Services"></i>
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#work" class="nav__link">
-                            <i class='bx bx-briefcase'></i>
+                            <i class='bx bx-briefcase' aria-label="Work" title="Work"></i>
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class='bx bx-mail-send'></i>
+                            <i class='bx bx-mail-send' aria-label="Contact" title="Contact"></i>
                         </a>
                     </li>
-
                 </ul>
             </div>
             <!-- Theme change button -->
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <i class='bx bx-moon change-theme' id="theme-button" aria-label="Toggle dark mode"
+                title="Toggle dark mode"></i>
         </nav>
     </header>
 
@@ -90,36 +84,38 @@
                     <h3 class="home__education">Lic. en Alto Rendimiento Deportivo</h3>
 
                     <div class="home__buttons">
-                        <a download href="assets/pdf/cvpedrocazorla.pdf" class="button button--ghost">
+                        <a download href="assets/pdf/cvpedrocazorla.pdf" class="button button--ghost" role="button"
+                            aria-label="Descargar CV en PDF">
                             Descargar CV
                         </a>
-                        <a href="#about" class="button">Acerca de mí</a>
+                        <a href="#about" class="button" role="button" aria-label="Ir a la sección Acerca de mí">Acerca
+                            de mí</a>
                     </div>
                 </div>
                 <div class="home__handle">
-                    <img src="assets/img/user-profile.png" class="home__img">
+                    <img src="assets/img/user-profile.png" class="home__img" alt="Foto de perfil de Pedro Cazorla">
                 </div>
 
                 <div class="home__social">
                     <a href="https://api.whatsapp.com/send?phone=+5492616409231&text=Hola, luego de ver tu portfolio, quiero conocer más sobre tus servicios."
-                        target="_blank" class="home__social-link">
+                        target="_blank" class="home__social-link" aria-label="Contactar por WhatsApp">
                         <i class='bx bxl-whatsapp'></i>
                     </a>
 
                     <a href="https://www.instagram.com/pedro5cazorla?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank" class="home__social-link">
+                        target="_blank" class="home__social-link" aria-label="Ver perfil de Instagram">
                         <i class='bx bxl-instagram'></i>
                     </a>
 
                     <a href="https://www.linkedin.com/in/pedro-cazorla-786007183/?originalSubdomain=ar" target="_blank"
-                        class="home__social-link">
+                        class="home__social-link" aria-label="Ver perfil de LinkedIn">
                         <i class='bx bxl-linkedin'></i>
                     </a>
 
                 </div>
 
-                <a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
+                <a href="#about" class="home__scroll" aria-label="Ir a la sección Acerca de mí">
+                    <i class='bx bx-mouse home__scroll-icon' aria-label="Scroll Down" title="Scroll Down"></i>
                     <span class="home__scroll-name">Scroll Down</span>
                 </a>
             </div>
@@ -131,7 +127,7 @@
             <h2 class="section__title">Acerca de Mí</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/about-pc.webp" alt="" class="about__img">
+                <img src="assets/img/about-pc.webp" alt="Licenciado Pedro Cazorla" class="about__img">
 
                 <div class="about__data">
                     <div class="about__info">
@@ -179,7 +175,8 @@
                         deportivo, gestionando equipos de
                         trabajo.
                     </p>
-                    <a href="#contact" class="button">Contáctame</a>
+                    <a href="#contact" class="button" role="button"
+                        aria-label="Ir a la sección de contacto">Contáctame</a>
                 </div>
 
             </div>
@@ -198,7 +195,7 @@
                         <div class="skills__group">
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Prof. de Educación Física (2011-2015)</h3>
                                     <span class="skills__level">I.E.F.: Instituto de Educación Física (Mendoza,
@@ -207,7 +204,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Lic. en Alto Rendimiento Deportivo (2015-2017)</h3>
                                     <span class="skills__level">Universidad del Aconcagua (Mendoza, Argentina)</span>
@@ -215,7 +212,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Director de Metodología (2018)</h3>
                                     <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
@@ -224,7 +221,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Director de Cantera (2018)</h3>
                                     <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
@@ -233,7 +230,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Video Analista Táctico (2018)</h3>
                                     <span class="skills__level">CENAFE Escuela de Entrenadores (Barcelona,
@@ -242,7 +239,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Entrenador de Fútbol UEFA B (2018)</h3>
                                     <span class="skills__level">Esc. de Entrenadores Cesar Luis Menotti (Bs. As.,
@@ -262,7 +259,7 @@
                         <div class="skills__group">
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Director Técnico (Agosto 2023-Actualidad)</h3>
                                     <span class="skills__level">Selección Mendocina de Fútbol Femenino</span>
@@ -270,7 +267,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Analista de Datos en Vivo (Febrero-Septiembre 2023)</h3>
                                     <span class="skills__level">Analysis Paradine Ltd. (Londres, Inglaterra)</span>
@@ -278,7 +275,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Director Técnico/Coordinador (2020-Actualidad)</h3>
                                     <span class="skills__level">Primera División e Inferiores del Fútbol Femenino (Club
@@ -287,7 +284,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
+                                <i class='bx bxs-badge-check' aria-label="Certificado" title="Certificado"></i>
                                 <div>
                                     <h3 class="skills__name">Preparador Físico/Coordinador (2015-2020)</h3>
                                     <span class="skills__level">Categorías Infantiles. Inferiores y Primera División
@@ -310,18 +307,20 @@
                 <div class="services__card">
                     <h3 class="services__title">Nuestros <br> Principios</h3>
                     <span class="services__button">
-                        Ver más <i class='bx bx-right-arrow-alt services__icon'></i>
+                        Ver más <i class='bx bx-right-arrow-alt services__icon'
+                            aria-label="Abrir detalles de principios" title="Abrir detalles de principios"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
+                            <i class='bx bx-x services__modal-close' aria-label="Cerrar modal" title="Cerrar modal"></i>
                             <h3 class="services__modal-title">
                                 Principios:
                             </h3>
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
-                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <i class='bx bx-check services__modal-icon' aria-label="Principios ofensivos"
+                                        title="Principios ofensivos"></i>
                                     <p class="services__modal-info">
                                         Principios Ofensivos: Ser Amplios y Profundos rápidamente.
                                         Variantes entre <b>posiciones</b> largas y Juego Directo.
@@ -479,48 +478,53 @@
 
             <div class="contact__container container grid">
                 <div class="contact__card">
-                    <i class='bx bx-mail-send contact__card-icon'></i>
+                    <i class='bx bx-mail-send contact__card-icon' aria-label="Email" title="Email"></i>
                     <h3 class="contact__card-title">Email</h3>
-                    <span class="contact__card-data">cazorlapedro5@gmail.com</span>
+                    <span class="contact__card-data" aria-label="Correo electrónico">cazorlapedro5@gmail.com</span>
 
-                    <a class="contact__button" href="mailto:cazorlapedro5@gmail.com" target="_blank">
-                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                    <a class="contact__button" href="mailto:cazorlapedro5@gmail.com" target="_blank"
+                        aria-label="Enviar email a cazorlapedro5@gmail.com" role="button">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' aria-label="Enviar"
+                            title="Enviar"></i>
                     </a>
                 </div>
 
                 <div class="contact__card">
-                    <i class='bx bxl-whatsapp contact__card-icon'></i>
+                    <i class='bx bxl-whatsapp contact__card-icon' aria-label="Whatsapp" title="Whatsapp"></i>
                     <h3 class="contact__card-title">Whatsapp</h3>
-                    <span class="contact__card-data">+549 2616409231</span>
+                    <span class="contact__card-data" aria-label="Número de Whatsapp">+549 2616409231</span>
 
                     <a class="contact__button"
                         href="https://api.whatsapp.com/send?phone=+5492616409231&text=Hola, luego de ver tu portfolio, quiero conocer más sobre tus servicios."
-                        target="_blank">
-                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        target="_blank" aria-label="Enviar mensaje por Whatsapp" role="button">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' aria-label="Enviar"
+                            title="Enviar"></i>
                     </a>
                 </div>
 
                 <div class="contact__card">
-                    <i class='bx bxl-instagram contact__card-icon'></i>
+                    <i class='bx bxl-instagram contact__card-icon' aria-label="Instagram" title="Instagram"></i>
                     <h3 class="contact__card-title">Instagram</h3>
-                    <span class="contact__card-data">pedro5cazorla</span>
+                    <span class="contact__card-data" aria-label="Usuario de Instagram">pedro5cazorla</span>
 
                     <a class="contact__button"
                         href="https://www.instagram.com/pedro5cazorla?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank">
-                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        target="_blank" aria-label="Enviar mensaje por Instagram" role="button">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' aria-label="Enviar"
+                            title="Enviar"></i>
                     </a>
                 </div>
 
                 <div class="contact__card">
-                    <i class='bx bxl-linkedin contact__card-icon'></i>
+                    <i class='bx bxl-linkedin contact__card-icon' aria-label="LinkedIn" title="LinkedIn"></i>
                     <h3 class="contact__card-title">LinkedIn</h3>
-                    <span class="contact__card-data">Pedro Cazorla</span>
+                    <span class="contact__card-data" aria-label="Usuario de LinkedIn">Pedro Cazorla</span>
 
                     <a class="contact__button"
-                        href="https://www.linkedin.com/in/pedro-cazorla-786007183/?originalSubdomain=ar"
-                        target="_blank">
-                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                        href="https://www.linkedin.com/in/pedro-cazorla-786007183/?originalSubdomain=ar" target="_blank"
+                        aria-label="Enviar mensaje por LinkedIn" role="button">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' aria-label="Enviar"
+                            title="Enviar"></i>
                     </a>
                 </div>
             </div>
@@ -531,17 +535,17 @@
     <footer class="footer">
         <div class="footer__container container">
 
-            <h1 class="footer__title">Pedro Cazorla</h1>
+            <h2 class="footer__title">Pedro Cazorla</h2>
 
             <ul class="footer__list">
                 <li>
-                    <a href="#about" class="footer__link">Acerca de mí</a>
+                    <a href="#about" class="footer__link" aria-label="Ir a la sección Acerca de mí">Acerca de mí</a>
                 </li>
                 <li>
-                    <a href="#work" class="footer__link">Videos</a>
+                    <a href="#work" class="footer__link" aria-label="Ir a la sección Videos">Videos</a>
                 </li>
                 <li>
-                    <a download href="assets/pdf/cvpedrocazorla.pdf" class="footer__link">
+                    <a download href="assets/pdf/cvpedrocazorla.pdf" class="footer__link" aria-label="Descargar CV en PDF" role="button">
                         Descargar CV
                     </a>
                 </li>
