@@ -1,6 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77cc00b9-8f86-43aa-9dd6-fed00c69f5ea/deploy-status)](https://app.netlify.com/projects/portfolio-pedro-cazorla/deploys)
+
 # 🚀 Pedro Cazorla Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/77cc00b9-8f86-43aa-9dd6-fed00c69f5ea/deploy-status)](https://app.netlify.com/projects/portfolio-pedro-cazorla/deploys)
 
 Professional portfolio of **Pedro Cazorla**, Bachelor in High Performance Sports.
 Here you will find information about his experience, education, sports analysis, and featured videos.
@@ -20,7 +21,8 @@ Here you will find information about his experience, education, sports analysis,
 
 ## 📸 Preview
 
-![Portfolio Screenshot](assets/img/preview.png)
+![Portfolio Screenshot](assets/img/preview.webp
+)
 
 ---
 
