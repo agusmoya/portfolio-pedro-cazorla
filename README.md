@@ -1,7 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/77cc00b9-8f86-43aa-9dd6-fed00c69f5ea/deploy-status)](https://app.netlify.com/projects/portfolio-pedro-cazorla/deploys)
 
----
-
 ## 📸 Preview
 
 ![Portfolio Preview](assets/img/preview.webp)
@@ -43,16 +41,6 @@ Here you will find information about his experience, education, sports analysis,
 
 Visit the live site on Netlify:
 [portfolio-pedro-cazorla.netlify.app](https://portfolio-pedro-cazorla.netlify.app)
-
----
-
-## 🛠 Installation & Usage
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/agusmoya/portfolio-pedro-cazorla.git
-   ```
-2. Open the `index.html` file in your browser.
 
 ---
 
